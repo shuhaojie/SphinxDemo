@@ -66,6 +66,27 @@ extensions = ['sphinx.ext.autodoc',
               ]
 ```
 
+Finally, edit your `index.rst` to build API documentation.
+
+```
+Welcome to Sphinx Demo's documentation!
+=======================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+src demo1
+===================
+.. automodule:: src.demo1
+   :members:
+
+src demo2
+=====================
+.. automodule:: src.demo2
+   :members:
+```
+
 ### create rst files
 
 Go back to your project and type `sphinx-apidoc -f -o source src`, you will have three `.rst` files.
@@ -77,14 +98,14 @@ Go back to your project and type `sphinx-apidoc -f -o source src`, you will have
     | +--demo1.rst
     | +--demo2.rst
     | +--modules.rst
-+-- src
-| +--demo1.py
-| +--demo2.py
+| +-- src
+    | +--demo1.py
+    | +--demo2.py
 ```
 
 ### crate the HTML or PDF files
 
-For html, you type `make html` in `docs` dictionary. Go to `docs/_build/html/index.html` to see your documentation.
+For html, you type `make html` in `docs` dictionary. Make sure this step doesn't have any warnings or errors so that your build is successful. Go to `docs/_build/html/index.html` to see your documentation.
 
 # References
 
