@@ -5,17 +5,25 @@ Brief tutorial of sphinx on how to build quick api documentation.
 ## install sphinx
 
 ```
-pip install sphinx (or pip3 install sphinx if you are python3)
+pip install sphinx
+```
+
+if you are python3
+
+```
+pip3 install sphinx
 ```
 
 ## create a project
 
 create a project which contains `docs` and `src` folders
 
+```bash
 +-- docs
 +-- src
 | +--demo1.py
 | +--demo2.py
+```
 
 ## build API documentation
 
@@ -28,6 +36,8 @@ sphinx-quickstart
 ```
 
 Choose the default as your sphinx configuration. After this step, your `docs` folder will be like
+
+```bash
 +-- docs
 | +--\_build
 | +--\_static
@@ -36,6 +46,7 @@ Choose the default as your sphinx configuration. After this step, your `docs` fo
 | +--index.rst
 | +--make.bat
 | +--Makefile
+```
 
 ### configure your sphinx
 
@@ -58,6 +69,8 @@ extensions = ['sphinx.ext.autodoc',
 ### create rst files
 
 Go back to your project and type `sphinx-apidoc -f -o source src`, you will have three `.rst` files.
+
+```bash
 +-- project
 | +-- docs
 +-- source
@@ -67,6 +80,7 @@ Go back to your project and type `sphinx-apidoc -f -o source src`, you will have
 +-- src
 | +--demo1.py
 | +--demo2.py
+```
 
 ### crate the HTML or PDF files
 
