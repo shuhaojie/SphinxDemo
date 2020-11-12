@@ -73,10 +73,10 @@ Go back to your project and type `sphinx-apidoc -f -o source src`, you will have
 ```bash
 +-- project
 | +-- docs
-+-- source
-| +--demo1.rst
-| +--demo2.rst
-| +--modules.rst
+| +-- source
+    | +--demo1.rst
+    | +--demo2.rst
+    | +--modules.rst
 +-- src
 | +--demo1.py
 | +--demo2.py
