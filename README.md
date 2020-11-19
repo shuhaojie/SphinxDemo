@@ -106,11 +106,11 @@ you `source` folder will be like:
 | +-- examples
     | +--example.rst
     | +--...
-    | +--...modules.rst
+    | +--modules.rst
 | +-- tensorgraph
     | +--tensorgraph.rst
     | +--...
-    | +--...modules.rst
+    | +--modules.rst
 ```
 
 ### Edit index.rst
