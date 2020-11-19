@@ -16,13 +16,23 @@ pip3 install sphinx
 
 ## Create a project
 
-create a `src` folder which contaions two `.py` files
+Project contaions three folders: `demo`, `tensorgraph`, `examples`
 
 ```bash
 +--root
-|   +-- src
+|   +-- demo
     | +--demo1.py
     | +--demo2.py
+|   +-- tensorgraph
+    | +--dataset
+    | +--layers
+    | +--models_zoo
+    | +--cost.py
+    | +--...
+|   +-- examples
+    | +--example.py
+    | +--...
+
 ```
 
 ## Build API documentation
@@ -39,7 +49,9 @@ Choose default and answer the question. After this step, your `root` folder will
 
 ```bash
 +-- root
-| +--src
+| +--demo
+| +--tensorgraph
+| +--examples
 | +--\_build
 | +--\_static
 | +--\_templates
@@ -51,7 +63,7 @@ Choose default and answer the question. After this step, your `root` folder will
 
 ### Configure your sphinx
 
-Go to `conf.py` to add the path of `src`
+Go to `conf.py` to make three folders in the path
 
 ```
 import os
@@ -70,37 +82,36 @@ extensions = ['sphinx.ext.autodoc',
 Change the theme if you like
 
 ```
-html_theme = 'classic'
+html_theme = 'nature'
 ```
 
 ### Create rst files
 
-Go back to your project and type `sphinx-apidoc -f -o source src`, you will have three `.rst` files.
+In your `root` dictionary, type `mkdir source` to new a folder. Then type the follows
+
+```
+sphinx-apidoc -f -o source/demo demo
+sphinx-apidoc -f -o source/tensorgraph tensorgraph
+sphinx-apidoc -f -o source/examples examples
+```
+
+you `source` folder will be like:
 
 ```bash
-+-- project
-| +-- source
++-- source
+| +-- demo
     | +--demo1.rst
     | +--demo2.rst
     | +--modules.rst
-| +-- src
-    | +--demo1.py
-    | +--demo2.py
+| +-- examples
+    | +--example.rst
+    | +--...
+    | +--...modules.rst
+| +-- tensorgraph
+    | +--tensorgraph.rst
+    | +--...
+    | +--...modules.rst
 ```
-
-Edit your `deom1.rst` file as follow
-
-```
-src.demo1
-============
-
-.. automodule:: src.demo1
-   :members:
-   :undoc-members:
-   :show-inheritance:
-```
-
-`deom2.rst` is the same
 
 ### Edit index.rst
 
@@ -114,9 +125,165 @@ Welcome to Sphinx Demo's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   source/demo1
-   source/demo2
+   source/demo/modules
+   source/examples/modules
+   source/tensorgraph/modules
 ```
+
+Take `tensorgraph` as example. The `modules.rst` file is like
+
+```
+tensorgraph
+===========
+
+.. toctree::
+   :maxdepth: 4
+
+   tensorgraph
+```
+
+This shows that `modules.rst` directs to `tensorgraph.rst` which is like as follow
+
+```
+tensorgraph
+===================
+
+dataset
+-----------------------
+
+.. toctree::
+   :maxdepth: 4
+
+   tensorgraph.dataset
+
+layers
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tensorgraph.layers
+
+models_zoo
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tensorgraph.models_zoo
+
+cost
+-----------------------
+
+.. automodule:: tensorgraph.cost
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\_iterator
+---------------------------------
+
+.. automodule:: tensorgraph.data_iterator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+graph
+------------------------
+
+.. automodule:: tensorgraph.graph
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+node
+-----------------------
+
+.. automodule:: tensorgraph.node
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+progbar
+--------------------------
+
+.. automodule:: tensorgraph.progbar
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sequential
+-----------------------------
+
+.. automodule:: tensorgraph.sequential
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+stopper
+--------------------------
+
+.. automodule:: tensorgraph.stopper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+trainobject
+------------------------------
+
+.. automodule:: tensorgraph.trainobject
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils
+------------------------
+
+.. automodule:: tensorgraph.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+```
+
+For `tensorgraph.dataset`, it will direct to `tensorgraph.dataset.rst`, as follow
+
+```
+cifar10
+----------------------------------
+
+.. automodule:: tensorgraph.dataset.cifar10
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+cifar100
+-----------------------------------
+
+.. automodule:: tensorgraph.dataset.cifar100
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+mnist
+--------------------------------
+
+.. automodule:: tensorgraph.dataset.mnist
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+preprocess
+-------------------------------------
+
+.. automodule:: tensorgraph.dataset.preprocess
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+```
+
+All contents in tensorgraph.dataset are moduls, so there will be no directs any more.
 
 ### Create the HTML or PDF files
 
