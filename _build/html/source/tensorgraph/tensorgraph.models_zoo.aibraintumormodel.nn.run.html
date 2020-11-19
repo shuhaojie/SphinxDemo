@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>run &#8212; 1 1 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/nature.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="airnet" href="tensorgraph.models_zoo.airnet.html" />
+    <link rel="prev" title="model" href="tensorgraph.models_zoo.aibraintumormodel.nn.model.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.airnet.html" title="airnet"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.aibraintumormodel.nn.model.html" title="model"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">1 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >tensorgraph</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="tensorgraph.html" >tensorgraph</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="tensorgraph.models_zoo.html" >models_zoo</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="tensorgraph.models_zoo.aibraintumormodel.html" >aibraintumormodel</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.html" accesskey="U">nn</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">run</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="run">
+<h1>run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader">
+<span id="configreader"></span><h2>configReader<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————
+# Reads INI-type config file for training
+# NEW - adds adc value to series_kprob default &amp; train_rec
+#——————————————————————————</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.</code><code class="sig-name descname">parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config_filepath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.dict">
+<code class="sig-name descname">dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.listFlags">
+<code class="sig-name descname">listFlags</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.listFlags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.setDelim">
+<code class="sig-name descname">setDelim</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">delim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.setDelim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.size">
+<code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader.parameters.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="costfunction">
+<h2>costfunction<a class="headerlink" href="#costfunction" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="radiomicsfeatures">
+<h2>radiomicsFeatures<a class="headerlink" href="#radiomicsfeatures" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="train">
+<h2>train<a class="headerlink" href="#train" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">run</a><ul>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.run.configReader">configReader</a></li>
+<li><a class="reference internal" href="#costfunction">costfunction</a></li>
+<li><a class="reference internal" href="#radiomicsfeatures">radiomicsFeatures</a></li>
+<li><a class="reference internal" href="#train">train</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.model.html"
+                        title="previous chapter">model</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tensorgraph.models_zoo.airnet.html"
+                        title="next chapter">airnet</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/source/tensorgraph/tensorgraph.models_zoo.aibraintumormodel.nn.run.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.airnet.html" title="airnet"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.aibraintumormodel.nn.model.html" title="model"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">1 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >tensorgraph</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="tensorgraph.html" >tensorgraph</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="tensorgraph.models_zoo.html" >models_zoo</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="tensorgraph.models_zoo.aibraintumormodel.html" >aibraintumormodel</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.html" >nn</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">run</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, 1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.0.
+    </div>
+  </body>
+</html>

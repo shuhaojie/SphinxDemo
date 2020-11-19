@@ -35,7 +35,7 @@ In your `root` dictionary
 sphinx-quickstart
 ```
 
-Choose the default as your sphinx configuration. After this step, your `root` folder will be like
+Choose default and answer the question. After this step, your `root` folder will be like
 
 ```bash
 +-- root
@@ -88,7 +88,7 @@ Go back to your project and type `sphinx-apidoc -f -o source src`, you will have
     | +--demo2.py
 ```
 
-edit your `deom1.rst` file as follow
+Edit your `deom1.rst` file as follow
 
 ```
 src.demo1
@@ -116,6 +116,7 @@ Welcome to Sphinx Demo's documentation!
 
    source/demo1
    source/demo2
+```
 
 ### Create the HTML or PDF files
 
@@ -127,4 +128,3 @@ For html, you type `make html` in `root` dictionary. Make sure this step doesn't
 2. <https://www.w3xue.com/exp/article/20201/72756.html>
 3. <https://stackoverflow.com/questions/10324393/sphinx-build-fail-autodoc-cant-import-find-module>
 4. <https://medium.com/better-programming/auto-documenting-a-python-project-using-sphinx-8878f9ddc6e9>
-```

@@ -1,0 +1,7 @@
+src.demo2
+============
+
+.. automodule:: src.demo2
+   :members:
+   :undoc-members:
+   :show-inheritance:
