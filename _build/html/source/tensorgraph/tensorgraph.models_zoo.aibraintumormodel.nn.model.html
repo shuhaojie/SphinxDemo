@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tensorgraph.models_zoo.aibraintumormodel.nn.model package &#8212; SphinixDemo 1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/nature.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="tensorgraph.models_zoo.aibraintumormodel.nn.run package" href="tensorgraph.models_zoo.aibraintumormodel.nn.run.html" />
+    <link rel="prev" title="tensorgraph.models_zoo.aibraintumormodel.nn.data package" href="tensorgraph.models_zoo.aibraintumormodel.nn.data.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.aibraintumormodel.nn.run.html" title="tensorgraph.models_zoo.aibraintumormodel.nn.run package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.aibraintumormodel.nn.data.html" title="tensorgraph.models_zoo.aibraintumormodel.nn.data package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">SphinixDemo 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >tensorgraph</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="tensorgraph.html" >tensorgraph package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="tensorgraph.models_zoo.html" >tensorgraph.models_zoo package</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="tensorgraph.models_zoo.aibraintumormodel.html" >tensorgraph.models_zoo.aibraintumormodel package</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.html" accesskey="U">tensorgraph.models_zoo.aibraintumormodel.nn package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tensorgraph.models_zoo.aibraintumormodel.nn.model package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tensorgraph-models-zoo-aibraintumormodel-nn-model-package">
+<h1>tensorgraph.models_zoo.aibraintumormodel.nn.model package<a class="headerlink" href="#tensorgraph-models-zoo-aibraintumormodel-nn-model-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-commonblocks-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Common model building blocks - TensorGraph version
+Louis Lee 10-02-2019
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.0b
+Internal identifier: Model5b</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0b
+Internal identifier: blocks.py</p>
+</dd>
+</dl>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.BatchNormalization">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">BatchNormalization</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.BatchNormalization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV1">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsDenseV1</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV2">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsDenseV2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV3">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsDenseV3</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV4">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsDenseV4</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsDenseV4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsFCNV1">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsFCNV1</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsFCNV1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsFCNV2">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsFCNV2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsFCNV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsOutput">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ClsOutput</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ClsOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Conv3D">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">Conv3D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Conv3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Conv3D_Transpose">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">Conv3D_Transpose</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Conv3D_Transpose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ConvBlock">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ConvBlock</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ConvBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ConvV1">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ConvV1</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ConvV1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ConvV2">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">ConvV2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.ConvV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.DeconvBlock">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">DeconvBlock</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.DeconvBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.DenseBlock3D">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">DenseBlock3D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.DenseBlock3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.DenseBlockDoubleConv3D">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">DenseBlockDoubleConv3D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.DenseBlockDoubleConv3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Linear">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">Linear</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Linear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskReduceDim">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">MaskReduceDim</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskReduceDim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskSoftmaxIdentity">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">MaskSoftmaxIdentity</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskSoftmaxIdentity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskSquare">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">MaskSquare</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskSquare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskedLinear">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">MaskedLinear</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.MaskedLinear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Matmul">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">Matmul</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.Matmul" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseLayer" title="tensorgraph.layers.template.BaseLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseLayer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegConvV1">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">SegConvV1</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegConvV1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegConvV2">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">SegConvV2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegConvV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegDeconvV1">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">SegDeconvV1</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegDeconvV1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegDeconvV2">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">SegDeconvV2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegDeconvV2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegOutput">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">SegOutput</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.SegOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.variable_summaries">
+<code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.</code><code class="sig-name descname">variable_summaries</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">var</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks.variable_summaries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-model-c3-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3 module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Component model for API, TensorGraph implementation
+Louis Lee 10-02-2019
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.4b
+Internal identifier: Model5b</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0b
+Internal identifier: Model_C3b</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Checkpoints from v2.0.4 are incompatible with this version</p>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.Model">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.Model.test_fprop">
+<code class="sig-name descname">test_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.Model.test_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.Model.train_fprop">
+<code class="sig-name descname">train_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3.Model.train_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-model-c4-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4 module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Component model for API, TensorGraph implementation
+Louis Lee 10-02-2019
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.4b
+Internal identifier: Model5b</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0b
+Internal identifier: Model_C4b</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Checkpoints from v2.0.4 are incompatible with this version</p>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.Model">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.Model.test_fprop">
+<code class="sig-name descname">test_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.Model.test_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.Model.train_fprop">
+<code class="sig-name descname">train_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4.Model.train_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-model-c4r-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Component model for API, TensorGraph implementation
+Louis Lee 07-02-2019
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.4b
+Internal identifier: Model5b</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0b
+Internal identifier: Model_C4Rb</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Checkpoints from v2.0.4 are incompatible with this version
+Actual model implementation may vary due to slightly different sequence
+ordering of layers</p>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.Model">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.Model.test_fprop">
+<code class="sig-name descname">test_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.Model.test_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.Model.train_fprop">
+<code class="sig-name descname">train_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R.Model.train_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-model-c5-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5 module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Component model for API, TensorGraph implementation
+Louis Lee 07-02-2019
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.4b
+Internal identifier: Model5b</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0b
+Internal identifier: Model_C5b</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Checkpoints from v2.0.4 are incompatible with this version
+Actual model implementation may vary due to slightly different sequence
+ordering of layers</p>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.Model">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.Model.test_fprop">
+<code class="sig-name descname">test_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.Model.test_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.Model.train_fprop">
+<code class="sig-name descname">train_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5.Model.train_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-model-c5xs-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Component model for API, TensorGraph implementation
+Louis Lee 07-02-2019
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.4b
+Internal identifier: Model5b</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0b
+Internal identifier: Model_C5XSb</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Checkpoints from v2.0.4 are incompatible with this version
+Actual model implementation may vary due to slightly different sequence
+ordering of layers</p>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.Model">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.Model.test_fprop">
+<code class="sig-name descname">test_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.Model.test_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.Model.train_fprop">
+<code class="sig-name descname">train_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS.Model.train_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR">
+<span id="tensorgraph-models-zoo-aibraintumormodel-nn-model-model-cr-module"></span><h2>tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR module<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR" title="Permalink to this headline">¶</a></h2>
+<p>#——————————————————————————-
+Component model for API
+Louis Lee 11-10-2018
+#——————————————————————————-
+API details:</p>
+<blockquote>
+<div><p>Version: ML_BRAIN_TUMOR_v2.0.0
+Internal identifier: Model5</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Compnent model details:</dt><dd><p>Version: v1.0.0
+Internal identifier: Model_CR</p>
+</dd>
+</dl>
+<p>#——————————————————————————-</p>
+<dl class="py class">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.Model">
+<em class="property">class </em><code class="sig-prename descclassname">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.</code><code class="sig-name descname">Model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="tensorgraph.layers.html#tensorgraph.layers.template.BaseModel" title="tensorgraph.layers.template.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tensorgraph.layers.template.BaseModel</span></code></a></p>
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.Model.test_fprop">
+<code class="sig-name descname">test_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.Model.test_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.Model.train_fprop">
+<code class="sig-name descname">train_fprop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t1</span></em>, <em class="sig-param"><span class="n">t2</span></em>, <em class="sig-param"><span class="n">tc</span></em>, <em class="sig-param"><span class="n">rmics</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR.Model.train_fprop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tensorgraph.models_zoo.aibraintumormodel.nn.model">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">tensorgraph.models_zoo.aibraintumormodel.nn.model package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks">tensorgraph.models_zoo.aibraintumormodel.nn.model.CommonBlocks module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C3 module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4 module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C4R module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5 module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_C5XS module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR">tensorgraph.models_zoo.aibraintumormodel.nn.model.model_CR module</a></li>
+<li><a class="reference internal" href="#module-tensorgraph.models_zoo.aibraintumormodel.nn.model">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.data.html"
+                        title="previous chapter">tensorgraph.models_zoo.aibraintumormodel.nn.data package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.run.html"
+                        title="next chapter">tensorgraph.models_zoo.aibraintumormodel.nn.run package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/source/tensorgraph/tensorgraph.models_zoo.aibraintumormodel.nn.model.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.aibraintumormodel.nn.run.html" title="tensorgraph.models_zoo.aibraintumormodel.nn.run package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tensorgraph.models_zoo.aibraintumormodel.nn.data.html" title="tensorgraph.models_zoo.aibraintumormodel.nn.data package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">SphinixDemo 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >tensorgraph</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="tensorgraph.html" >tensorgraph package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="tensorgraph.models_zoo.html" >tensorgraph.models_zoo package</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="tensorgraph.models_zoo.aibraintumormodel.html" >tensorgraph.models_zoo.aibraintumormodel package</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="tensorgraph.models_zoo.aibraintumormodel.nn.html" >tensorgraph.models_zoo.aibraintumormodel.nn package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">tensorgraph.models_zoo.aibraintumormodel.nn.model package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, shuhaojie.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.0.
+    </div>
+  </body>
+</html>
